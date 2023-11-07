@@ -14,13 +14,15 @@ const listaDeTeclas = document.querySelector('.tecla');
 listaDeTeclas[0].onclick = tocaSom;
 
 let contador=0;
-while (contador < listaDeTeclas.length) {
- const efeito = listaDeTeclas[contador].clasLit[1];
- const idAudio = "#som_"+efeito;
-  listaDeTeclas[contador].onclick = function () {
- tocaSom(Audio);
+for (let contador = 0; contador <listaDeTeclas.length; contador++) { 
+  const tecla =listaDeTecla[contador];
+ const efeito = tecla.classList[1];
+const idAudio = `#som_${efeito}`;
+tecla.onclick = function () {
+ tocaSom(idAudio);
 };
 contador = contador + 1;
-console.log(contador);
+
 }
+
 
