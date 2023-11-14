@@ -20,8 +20,7 @@ for (let contador = 0; contador <listaDeTeclas.length; contador++) {
 const idAudio = `#som_${efeito}`;
 tecla.onclick = function () {
  tocaSom(idAudio);
-};
-contador = contador + 1;
+}
 
 }
 
