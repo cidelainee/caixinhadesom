@@ -11,7 +11,7 @@ document.querySelector('.tecla_pom').onclick = tocaSom;
 const listaDeTeclas = document.querySelector('.tecla');
 
 //chamando a função tocaSomPom pela item "0" da listaDeTecla
-listaDeTeclas[0].onclick = tocaSom;
+listaDeTeclas[0].onclick =tocaSom;
 
 let contador=0;
 for (let contador = 0; contador <listaDeTeclas.length; contador++) { 
@@ -21,7 +21,9 @@ const idAudio = `#som_${efeito}`;
 tecla.onclick = function () {
  tocaSom(idAudio);
 }
-
+tecla.onkeydown= function(){
+  tecla.classList.add('ativa');
+}
 }
 
 
