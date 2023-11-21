@@ -22,8 +22,9 @@ tecla.onclick = function () {
  tocaSom(idAudio);
 }
 tecla.onkeydown= function(){
+  tecla.classList.add('ativa');
+}
+    }tecla.onkeydown= function()
   tecla.classList.remove('ativa');
-}
-}
 
 
